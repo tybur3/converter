@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="pl">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style/style.css" />
+    <title>Zadanie 3</title>
+  </head>
+
+  <body>
+    <main>
+      <div class="task-area">
+        <h1 class="task-area__bar">Zadanie 3</h1>
+        <div class="task-area__content -task-3">
+          <p class="description">
+            Aplikacja konwertuje temperatury ze stopni w skali Celsiusza na
+            skalę Fahrenheita i odwrotnie.
+          </p>
+          <div>
+            <form name="form-1">
+              <label class="-center"
+                >Wpisz liczbę, następnie wybierz jej skalę:
+              </label>
+              <input
+                placeholder="np. 6"
+                id="number-input"
+                type="number"
+                required
+                min="1"
+                max="10"
+                class="input-primary"
+              />
+              <div>
+                <label>
+                  <input
+                    type="radio"
+                    name="degrees"
+                    value="°C"
+                    checked="checked"
+                    id="celsius"
+                    class="button-primary button-1"
+                  />
+                  °C
+                </label>
+                <label>
+                  <input
+                    type="radio"
+                    name="degrees"
+                    value="°F"
+                    id="fahrenheit"
+                    class="button-primary button-2"
+                  />
+                  °F
+                </label>
+              </div>
+            </form>
+            <!-- <p class="info">Na co chcesz przekonwertować?</p> -->
+            <button id="convert" class="button-primary">Konwertuj</button>
+            <p id="print-number" class="output -center-text"></p>
+          </div>
+        </div>
+      </div>
+      <div class="button-homepage">
+        <a href="index.html">Powrót do strony głównej</a>
+      </div>
+    </main>
+    <script src="scripts/main.js"></script>
+    <script src="scripts/zad3.js"></script>
+  </body>
+</html>

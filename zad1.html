@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="pl">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style/style.css" />
+    <title>Zadanie 1</title>
+    <script defer src="scripts/main.js"></script>
+    <script defer src="scripts/zad1.js"></script>
+  </head>
+
+  <body>
+    <main>
+      <div class="task-area">
+        <h1 class="task-area__bar">Zadanie 1</h1>
+        <div class="task-area__content -task-1">
+          <p class="description">
+            Aplikacja losuje liczbę całkowitą z przedziału od 1 do 10. Następnie
+            prosi użytkownika o podanie (odgadnięcie) wylosowanej liczby. W
+            zależności czy liczba została odgadnięta czy nie, aplikacja
+            wyświetla odpowiedni komunikat.
+          </p>
+          <button id="random" class="button-primary button-1">
+            Losuj liczbę
+          </button>
+          <form name="form-1" id="number-input">
+            <label>Liczba od 1 do 10:</label>
+            <input
+              placeholder="np. 7"
+              type="number"
+              required
+              min="1"
+              max="10"
+              id="number-input"
+              class="input-primary"
+            />
+          </form>
+          <button id="match" class="button-primary">Sprawdź liczbę</button>
+          <p id="print-number" class="output -center-text"></p>
+        </div>
+      </div>
+      <div class="button-homepage">
+        <a href="index.html">Powrót do strony głównej</a>
+      </div>
+    </main>
+  </body>
+</html>

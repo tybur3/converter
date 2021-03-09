@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="pl">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style/style.css">
+    <title>Zadanie 2</title>
+</head>
+
+<body>
+    <main>
+        <div class="task-area">
+            <h1 class="task-area__bar">Zadanie 2</h1>
+            <div class="task-area__content -task-2">
+                <p class="description">Aplikacja umożliwia wykonanie działań mnożenia i dzielenia
+                    dwóch
+                    liczb.</p>
+                <form name="form-1">
+                    <label>Pierwsza liczba:</label>
+                    <input placeholder="np. 6" id="number-input-1" type="number" required class="input-primary">
+                    <label>Druga liczba:</label>
+                    <input placeholder="np. 23" id="number-input-2" type="number" required class="input-primary">
+                </form>
+                <button id="multiply" class="button-primary button-1">Mnożenie</button>
+                <button id="divide" class="button-primary button-2">Dzielenie</button>
+                <p id="print-number" class="output -center-text"></p>
+            </div>
+        </div>
+        <div class="button-homepage">
+            <a href="index.html">Powrót do strony głównej</a>
+        </div>
+    </main>
+    <script src="scripts/main.js"></script>
+    <script src="scripts/zad2.js"></script>
+</body>
+
+</html>
